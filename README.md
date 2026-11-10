@@ -13,7 +13,7 @@ I analyse technical and operational questions, define testable requirements, con
 
 **Built and executed:** A local Qwen → n8n → Python API → SQLite workflow with approval, rejection, restart and fail-closed paths. Recorded 36 real local model inferences and 135 Python tests (rechecked 10 November 2026).
 
-**Assessed:** A synthetic, retrospective 32-case routing pilot achieved 22/32 correct classifications in the hybrid path but missed 5/9 urgent cases. A *separate*, later 96-case evaluation on genuine NLBSE issues achieved 55/96 with Qwen v2 versus 46/96 for a keyword baseline; the paired uncertainty interval includes no difference. Human review remains necessary for critical cases. Independent Volvo event data measure process transitions, not savings or customer ROI.
+**Assessed:** A synthetic, retrospective 32-case routing pilot achieved 22/32 correct classifications in the hybrid path but missed 5/9 urgent cases. A *separate*, later 96-case evaluation on genuine NLBSE issues achieved 55/96 with Qwen v2 versus 46/96 for a keyword baseline; the paired uncertainty interval includes no difference. Human review remains necessary for critical cases.
 
 [Executed end-to-end test](https://github.com/SFS-Labs/ai-knowledge-ops-lab/actions/runs/42828304593/job/129871453222) · [Decision brief](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/DECISION_EVIDENCE_BRIEF.md) · [NLBSE retest](https://github.com/SFS-Labs/ai-knowledge-ops-lab/actions/runs/42827473405/job/129868488355) · [Repository](https://github.com/SFS-Labs/ai-knowledge-ops-lab)
 
@@ -21,7 +21,7 @@ I analyse technical and operational questions, define testable requirements, con
 
 **Built:** A Cloudflare Workers prototype using the official EU TED Search API, deterministic source processing and a documented evaluation design.
 
-**Assessed:** Four controlled model calls, two per arm. Both paths returned 32/32 correct prepared facts; the expected source references were present for 26/32 baseline answers and 25/32 SFS answers. The comparison did not support a quality advantage, so further commercial development was paused. This was one procedure, not a customer outcome or general model benchmark.
+**Assessed:** Four controlled model calls, two per arm. Both paths returned 32/32 correct prepared facts; the expected source references were present for 26/32 baseline answers and 25/32 SFS answers. The comparison did not support a quality advantage, so further commercial development was paused.
 
 [Decision log](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/DECISION-LOG.md) · [Methodology](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/METHODOLOGY.md) · [Aggregate results](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/data/ab-aggregate.json) · [Repository](https://github.com/SFS-Labs/tender-intelligence-case-study)
 
@@ -35,9 +35,9 @@ I analyse technical and operational questions, define testable requirements, con
 
 ## Additional evidence
 
-**[SFS Education Funding](https://github.com/SFS-Labs/SFS-Labs/blob/main/case-studies/education-funding.md)** — Designed source and claim provenance, versioned document records, three-valued eligibility rules and seven bounded MCP tools. The historical 28 October checkpoint contained 16,088 URLs, 725 documents and 353 candidates, but **zero verified funding programmes**. Protocol checks are not evidence of confirmed ChatGPT/iOS use.
+**[SFS Education Funding](https://github.com/SFS-Labs/SFS-Labs/blob/main/case-studies/education-funding.md)** — Designed source and claim provenance, versioned document records, three-valued eligibility rules and seven bounded MCP tools. The historical 28 October checkpoint contained 16,088 URLs, 725 documents and 353 candidates, but **zero verified funding programmes**.
 
-**[POINCARÉ external Solidity review](https://github.com/SFS-Labs/SFS-Labs/blob/main/security-review/case-studies/poincare-2026.md)** — Reviewed a pinned seven-file scope, independently reproduced 222 original Foundry tests, documented two Low findings and eight notes, and inspected nine subsequent developer remediation commits across 26 files. Revised-branch tests were not independently rerun; this was not a comprehensive audit.
+**[POINCARÉ external Solidity review](https://github.com/SFS-Labs/SFS-Labs/blob/main/security-review/case-studies/poincare-2026.md)** — Reviewed a pinned seven-file scope, independently reproduced 222 original Foundry tests, documented two Low findings and eight notes, and inspected nine subsequent developer remediation commits across 26 files. Revised-branch tests were not independently rerun;
 
 ## How the work connects
 
@@ -57,4 +57,4 @@ The sequence **Discover → Translate → Design → Deliver → Evaluate** is i
 - **Independent online retail and reselling**, since 11/2022. Price assessment, sourcing, customer communication, complaints and fulfilment.
 - **B.Sc. Finance & Capital Markets**, TH Köln — ongoing.
 
-I take responsibility for documented problem framing, requirements, evaluation criteria, architectural decisions and review of results. Implementation and portions of the analysis are **AI-assisted**; source records and tests establish what was executed, not manual authorship of every line. Independent project prototypes and research findings are not presented as production customer deployments or measured ROI.
+I take responsibility for documented problem framing, requirements, evaluation criteria, architectural decisions and review of results. Implementation and portions of the analysis are **AI-assisted**.
