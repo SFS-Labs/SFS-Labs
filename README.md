@@ -1,54 +1,82 @@
-# SFS.Labs
-### AI Solutions · Automation · Systems Integration · Technical Delivery
+# Mathias Steinbach | AI & Automation Solutions
 
-I'm Mathias Steinbach. I work at the intersection of business requirements, AI-assisted software implementation, integration architecture, and evidence-led engineering. My academic background is Finance & Capital Markets (B.Sc., TH Köln, ongoing); my practical background includes technical customer onboarding and hands-on development direction across cloud, data, security, and agent-tool integrations.
+**Problemdefinition · Business Analysis · Technical Implementation · Evidence-led Evaluation**  
+Essen / NRW · [LinkedIn](https://www.linkedin.com/in/mathias-steinbach-513869446/) · mathias.steinbach@icloud.com
 
-**Current focus:** paid, real-world B2B AI implementations with direct customer and engineering-team exposure — from discovery and requirements through APIs, testing, deployment and operations. I am open to junior, associate and technically substantive entry roles; the **work** matters more than the title.
+I translate operational and technical problems into **testable requirements, implementable system designs and defensible decisions**. My work connects problem discovery, process and data analysis, AI-assisted implementation, systems integration and evidence-based evaluation.
 
-## How I approach engineering
+**Target:** Junior / Associate roles in AI & Automation Solutions, AI Implementation, Technical Business Analysis and Solutions Consulting. I am looking for a role that connects real business processes with technical delivery and allows close collaboration with customers and engineering teams.
 
-I don't treat tool fluency or a plausible demo as deployment evidence. I prefer short feedback loops:
+**[Recruiter overview: role, evidence and selected work samples →](https://sfs-labs.github.io/ai-knowledge-ops-lab/recruiter.html)**
 
-1. **Frame the actual problem:** identify user outcomes, operating context, data boundaries and acceptance criteria.
-2. **Design the full path:** connect inputs, validation, authentication, persistence, tool interfaces and observable outputs.
-3. **Build with AI assistance where appropriate:** coordinate implementation, inspect changes and establish repeatable tests rather than assume generated code is correct.
-4. **Investigate failures at the affected layer:** reproduce, isolate the root cause and update the surrounding architecture or operational harness when necessary.
-5. **Re-verify the end-to-end behavior:** separate CI success, client interoperability, data correctness and live-service availability.
-6. **Record the remaining limitations:** document what was observed, what is inferred and what remains untested.
+---
 
-**Concrete example:** In SFS Genomics, an OAuth discovery conflict, Cloudflare D1 read-quota exhaustion, mobile-file constraints and a source-repository migration each required a different engineering response. The resulting project records separate acceptance evidence for persistence, protected MCP client calls, OAuth protocol checks and bounded scientific validation.
+## How I work: from problem to decision
 
-## Selected engineering and delivery evidence
+| Stage | Work performed | Observable output |
+|---|---|---|
+| **1. Discover** | Clarify the actual problem, user context, process, constraints and source data. | Problem statement; known facts, assumptions and unknowns. |
+| **2. Translate** | Convert the problem into requirements, dimensions, measurable criteria and acceptance conditions. | Requirements and evidence contract; baseline and decision criteria. |
+| **3. Design** | Define data flows, interfaces, system boundaries, control points and failure handling. | Architecture and process logic that engineering work can use. |
+| **4. Deliver** | Coordinate AI-assisted implementation, integrate APIs/workflows/storage and inspect changes. | Executable workflow or prototype with traceable implementation decisions. |
+| **5. Evaluate** | Reproduce tests, compare alternatives, inspect failure costs and state what the evidence does not establish. | Verification record, risk assessment and Go/No-Go decision. |
 
-| Work | What it demonstrates | Verified scope |
-| --- | --- | --- |
-| **[REA Stack — Camber-selected MCP orchestration](https://github.com/SFS-Labs/security-reviews/blob/main/docs/CAMBER_MULTITOOL_ACCEPTANCE.md)** · [verified runner](https://github.com/SFS-Labs/security-reviews/actions/runs/40716523503) | Camber agent selected three bounded REA MCP tools and an approved GitHub workflow; authenticated dispatch, tool-policy gates and actual GitHub Actions execution | Three real read-only MCP calls succeeded with 33 checks in the dated acceptance run. Weekly GitHub replay configured; fresh unattended Camber agent inference remains open ([Issue #5](https://github.com/SFS-Labs/security-reviews/issues/5)). |
-| **[SFS Genomics](https://github.com/SFS-Labs/sfs-genomics)** · [engineering study](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/featured-engineering-project-sfs-genomics/sfs-genomics) | iPhone browser import → EU Cloudflare D1 → OAuth PKCE/DCR → authenticated remote MCP / ChatGPT integration → public GWAS/Ensembl evidence checks | 607,051 SNP calls reconciled over 256 D1 partitions; recorded authenticated client calls; scoped CI and five-locus reference QC. Not clinical-grade or guaranteed continuously available. |
-| **[SFS Education Funding](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/featured-engineering-project-sfs-education-funding/sfs-education-funding)** | TypeScript Worker, scheduled collection, source provenance, versioned documents, pass/fail/unknown rules, seven bounded MCP tools | Deployed engineering prototype with 725 stored documents and 2,025 claims at the dated checkpoint; **zero** verified application-ready programs. [Source repository](https://github.com/SFS-Labs/education-funding-mcp) currently private. |
-| **[POINCARÉ review](security-review/case-studies/poincare-2026.md)** | External scoped Solidity review, independently reproduced test suite, actionable developer findings and source-level remediation follow-up | Two low-severity findings, eight notes; 222 original Foundry tests independently reproduced. Maintainer's revised-suite result not independently rerun. |
-| **[Value Rail](https://github.com/SFS-Labs/value-rail-mvp)** | Source adapter, state change detection, scheduled JSON feed, optional worker, deterministic testing | 326 offline tests at a documented checkpoint; successful CI/feed runs, no claim of current profit or phone delivery. |
-| **[AI Knowledge Ops Lab](https://github.com/SFS-Labs/ai-knowledge-ops-lab)** | Real SEC-source ingestion, input hashing, auditable model-output import, review routing and reproducible quality checks | 15 development sources, separate three-source AI-assisted replay and 32 regression tests. No validated production model benchmark. |
+## Selected evidence
 
-## Working with AI tools
+The projects below use the same review structure. They are selected because they show the work behind a solution, not because they share a technology stack.
 
-I define the problem, technical boundaries, requirements and acceptance evidence. I use AI-assisted development with explicit review, tool-calling workflows, CI, and defect reproduction to accelerate implementation. Code and commit attribution alone do not establish that every line was authored manually. I distinguish **implemented**, **tested**, and **observed in operation**.
+### 1. AI Knowledge Ops Lab — service intake and routing
 
-### Skills evidenced by the projects
-- **Integration:** REST/API design, OAuth 2.0, PKCE, MCP, Cloudflare Workers, D1/KV, GitHub Actions and source control.
-- **Implementation:** AI-assisted Python/JavaScript/TypeScript, validation pipelines, deterministic tests, data-model boundaries and error semantics.
-- **Delivery:** customer issue analysis, requirements capture, acceptance criteria, reproducible verification, documentation and technical trade-offs.
+- **Problem:** Structure incoming service requests and route them without hiding urgent cases behind a better aggregate accuracy score.
+- **Analysis:** Separated request category from urgency; compared LLM-only, deterministic rules and a hybrid policy; investigated false-high and missed-high cases.
+- **Decision:** Retain human review for conflicts and do not treat higher overall accuracy as sufficient evidence for operational release.
+- **Implementation:** Local Qwen inference → n8n → Python API → SQLite, with separate review/approval and explicit failure paths.
+- **Verification:** 36 real local model inferences; a real n8n→LLM→SQLite end-to-end run including reject, restart and fail-closed; 124 Python tests in recorded CI runs.
+- **Boundary:** The 32-case routing pilot is synthetic and post-hoc; no customer deployment or measured ROI. A separate 96-case NLBSE evaluation is a different experiment and must not be merged with the urgency pilot.
+- **Inspect:** [Decision brief](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/DECISION_EVIDENCE_BRIEF.md) · [Research design](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/RESEARCH_DESIGN.md) · [Repository](https://github.com/SFS-Labs/ai-knowledge-ops-lab)
 
-## Professional development
+### 2. Tender Intelligence — product hypothesis and stop decision
 
-- **MIT Professional Education:** Applied Agentic AI for Organizational Transformation (70 hours, completed May 2026).
-- **Oracle:** Building Agentic Workflows for Fusion Applications using Oracle AI Agent Studio (16 hours, completed March 2026).
-- **ACAMS:** Certified Cryptoasset Anti-Financial Crime Specialist (CCAS, September 2025).
-- **TH Köln:** B.Sc. Finance and Capital Markets, ongoing since September 2025.
+- **Problem:** Determine whether adding AI-supported source and change intelligence improves decisions based on EU public procurement notices.
+- **Analysis:** Integrated the official TED Search API, tested document/version signals and compared two processing paths on the same prepared evidence with a predefined 16-point rubric.
+- **Decision:** The SFS path showed no evidenced quality advantage; commercial development was paused rather than presenting a negative result as success.
+- **Implementation:** Modular JavaScript service on Cloudflare Workers, TED API integration, deterministic normalization and a source-aware Decision Brief.
+- **Verification:** Four model calls; both arms returned 32/32 correct facts, while expected source references supported 26/32 baseline answers and 25/32 SFS answers.
+- **Boundary:** Two runs per arm, one procurement procedure, preprocessed source facts; no general performance claim, customer ROI or product-market fit.
+- **Inspect:** [Decision log](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/DECISION-LOG.md) · [Methodology](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/METHODOLOGY.md) · [Repository](https://github.com/SFS-Labs/tender-intelligence-case-study)
 
-## Links
+### 3. SFS Genomics — data integration and evidence controls
 
-- [Published technical documentation](https://sfs-labs.gitbook.io/sfs-labs-docs/)
-- [LinkedIn](https://www.linkedin.com/in/mathias-steinbach-513869446/)
-- [Contact](mailto:mathias.steinbach@icloud.com)
+- **Problem:** Turn a large consumer SNP-array export into a persistent, authenticated and scientifically bounded research interface from an iPhone-first workflow.
+- **Analysis:** Separated raw genotype calls, public GWAS associations, Ensembl reference-population LD and clinical endpoints; defined checks for build, alleles, strand, linkage and evidence sufficiency.
+- **Decision:** Abstain when reference or study evidence is incomplete; do not convert associations or successful storage into clinical conclusions.
+- **Implementation:** Mobile parser and staged upload → 256 EU Cloudflare D1 partitions → OAuth-protected remote MCP interface and typed tools.
+- **Verification:** 607,051 accepted SNP calls reconciled across 256 partitions; recorded authenticated client calls; OAuth/PKCE/DCR checks and a five-locus reference-validation pilot.
+- **Boundary:** Not a clinical diagnostic or validated personal risk model; only five reference loci in the bounded pilot.
+- **Inspect:** [Engineering case study](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/featured-engineering-project-sfs-genomics/sfs-genomics) · [Repository](https://github.com/SFS-Labs/sfs-genomics)
 
-**SFS.Labs** is the public display identity for personal engineering work associated with **Sigma Finance Systems**. It is not a claim of an incorporated company, paid enterprise deployments or an independently operated security-audit firm.
+### Additional evidence
+
+**SFS Education Funding — evidence architecture:** source discovery, document versions, claim extraction and reviewed eligibility rules are separate states. At the 28 October 2026 checkpoint: 16,088 tracked URLs, 725 documents, 353 candidates and **zero verified programmes**. [Public case study](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/featured-engineering-project-sfs-education-funding/sfs-education-funding).
+
+**POINCARÉ — external technical review:** 222 Foundry tests independently reproduced on the pinned source version; two Low findings and eight notes; nine remediation commits reviewed at source level. The developer's subsequent test suite was not independently rerun. [Review evidence](https://github.com/SFS-Labs/security-reviews/blob/main/README.md).
+
+## Professional context
+
+- **Technical Onboarding Support**, Dr. Schengber & Friends GmbH (working student, remote; since 07/2026): analyse and resolve technical user problems, isolate causes and explain solutions.
+- **Independent online retail and reselling** (since 11/2022): sourcing and price assessment, customer contact, complaints and operational fulfilment.
+- **B.Sc. Finance & Capital Markets**, TH Köln (ongoing).
+
+## Attribution and verification
+
+I define the problem framing, requirements, technical boundaries, hypotheses, decision criteria and acceptance evidence. Implementation is AI-assisted; I review and verify the resulting work through code inspection, test design, CI and documented limits. I do **not** claim that every code line was written manually. I distinguish implemented, tested, observed in operation and still unverified.
+
+## Roles where this evidence is relevant
+
+- Junior / Associate Solutions Consultant — AI & Automation
+- Junior AI / GenAI Implementation Consultant
+- Technical Business Analyst — AI, Data or Automation
+- Junior Technical Solutions Engineer / Integration Consultant
+- Junior AI Transformation or Process Automation Consultant, where the role includes hands-on delivery
+
+The strongest fit is a position that combines business problem analysis, requirements, technical integration and evaluation — not a role limited to either slide-only strategy or isolated code production.
