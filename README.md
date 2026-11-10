@@ -1,43 +1,27 @@
 # Mathias Steinbach | AI & Automation Solutions
 
-**Problemdefinition · Business Analysis · Technical Implementation · Evidence-led Evaluation**  
+**Problem- und Prozessanalyse · Anforderungs- und Messkonzeption · Systemdesign · technische Integration · Evaluation**  
 Essen / NRW · [LinkedIn](https://www.linkedin.com/in/mathias-steinbach-513869446/) · mathias.steinbach@icloud.com
 
-I translate operational and technical problems into **testable requirements, implementable system designs and defensible decisions**. My work connects problem discovery, process and data analysis, AI-assisted implementation, systems integration and evidence-based evaluation.
+I analyze operational and technical problems, turn findings into testable requirements, design data and integration paths, and evaluate implemented solutions against explicit criteria. The selected projects below document **what I have done, what was executed and how it was checked**.
 
-**[Recruiter overview: role, evidence and selected work samples →](https://sfs-labs.github.io/ai-knowledge-ops-lab/recruiter.html)**
+[**Project overview and source evidence**](https://sfs-labs.github.io/ai-knowledge-ops-lab/recruiter.html) · [AI Knowledge Ops](https://github.com/SFS-Labs/ai-knowledge-ops-lab) · [Tender Intelligence](https://github.com/SFS-Labs/tender-intelligence-case-study) · [SFS Genomics](https://github.com/SFS-Labs/sfs-genomics)
 
----
+## Competencies demonstrated in practice
 
-## How I work: from problem to decision
-
-| Stage | Work performed | Observable output |
+| Competency | Observable work | Evidence |
 |---|---|---|
-| **1. Discover** | Clarify the actual problem, user context, process, constraints and source data. | Problem statement; known facts, assumptions and unknowns. |
-| **2. Translate** | Convert the problem into requirements, dimensions, measurable criteria and acceptance conditions. | Requirements and evidence contract; baseline and decision criteria. |
-| **3. Design** | Define data flows, interfaces, system boundaries, control points and failure handling. | Architecture and process logic that engineering work can use. |
-| **4. Deliver** | Coordinate AI-assisted implementation, integrate APIs/workflows/storage and inspect changes. | Executable workflow or prototype with traceable implementation decisions. |
-| **5. Evaluate** | Reproduce tests, compare alternatives, inspect failure costs and state what the evidence does not establish. | Verification record, risk assessment and Go/No-Go decision. |
+| **Problem and process analysis** | Separate request categories, urgency, process observations and untested assumptions. | [AI Knowledge Ops: decision and research](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/DECISION_EVIDENCE_BRIEF.md) |
+| **Requirements and measurement design** | Define acceptance criteria, baselines, data sources, error costs and falsifiable hypotheses. | [Routing research design](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/RESEARCH_DESIGN.md); [Tender methodology](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/METHODOLOGY.md) |
+| **Technical architecture and integration** | Design and connect APIs, workflows, storage, authentication and controlled MCP tools. | [Genomics architecture and observed integration](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/PORTFOLIO.md) |
+| **Technical delivery and verification** | Integrate an executable Qwen → n8n → Python API → SQLite path; record negative paths, CI and acceptance results. | [Executed service-intake E2E](https://github.com/SFS-Labs/ai-knowledge-ops-lab/actions/runs/42413698800) |
+| **Evidence-based evaluation** | Compare alternatives, examine critical class failures and stop development when a hypothesis is unsupported. | [Tender decision log](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/DECISION-LOG.md); [NLBSE test](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/evaluation/NLBSE_REAL_LLM_EVALUATION.md) |
 
-The sequence is iterative: negative evidence can change the problem framing, criteria or system design.
+These competencies connect in an iterative working process: **Discover → Translate → Design → Deliver → Evaluate**. Findings can change the initial question, requirements or design.
 
-## Competences in practice — selected proof
+## Selected projects — work and results
 
-The examples below show **what I do**, **how I apply it** and **where the work can be inspected**. Employers can assess the relevance to their own role and environment.
-
-| Competence | Demonstrated application | Inspectable work |
-|---|---|---|
-| **Discover — clarify the problem** | Distinguished service request category from urgency; challenged the assumed value of procurement intelligence. | [Service-intake decision](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/DECISION_EVIDENCE_BRIEF.md) · [Tender decision log](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/DECISION-LOG.md) |
-| **Translate — make questions testable** | Defined classifications, comparison baselines, review criteria and explicit failure costs. | [Research design](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/RESEARCH_DESIGN.md) |
-| **Design — define system boundaries** | Designed mobile data ingestion, persistent storage, authentication and evidence/abstention gates. | [Genomics engineering record](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/PORTFOLIO.md) |
-| **Deliver — integrate and test** | Connected local Qwen, n8n, Python and SQLite; implemented authenticated cloud/MCP access. | [Executed service-intake E2E](https://github.com/SFS-Labs/ai-knowledge-ops-lab/actions/runs/42413698800) · [Genomics source](https://github.com/SFS-Labs/sfs-genomics) |
-| **Evaluate — challenge decisions with evidence** | Recorded negative procurement A/B results, classification errors and scope-limited external findings. | [Tender methodology](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/METHODOLOGY.md) · [NLBSE evaluation](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/evaluation/NLBSE_REAL_LLM_EVALUATION.md) |
-
-The stages overlap: results can invalidate an initial assumption and change the technical path. These examples demonstrate completed work within their documented scopes; they are not a claim of having held every job title associated with these activities.
-
-## Selected evidence
-
-The projects below use the same review structure. They are selected because they show the work behind a solution, not because they share a technology stack.
+Three primary examples show analysis and technical execution, product-hypothesis evaluation, and end-to-end integration. Two additional examples document provenance modeling and a bounded external review. Each detailed record links its source and scope.
 
 ### 1. AI Knowledge Ops Lab — service intake and routing
 
@@ -70,7 +54,7 @@ The projects below use the same review structure. They are selected because they
 - **Verification:** 607,051 accepted SNP calls reconciled across 256 partitions; recorded authenticated client calls; OAuth/PKCE/DCR checks and a five-locus reference-validation pilot.
 - **Boundary:** Not a clinical diagnostic or validated personal risk model; only five reference loci in the bounded pilot.
 - **Attribution:** Owner-defined integration constraints, architecture and evidence gates; AI-assisted engineering and regression checks.
-- **Inspect:** [Engineering decisions](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/PORTFOLIO.md) · [Implementation](https://github.com/SFS-Labs/sfs-genomics) · [Validation evidence](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/SCIENTIFIC_VALIDATION_PROTOCOL.md) · [GitBook case](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/core-evidence-discover-translate-design-deliver-evaluate/sfs-genomics)
+- **Inspect:** [Engineering decisions](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/PORTFOLIO.md) · [Implementation](https://github.com/SFS-Labs/sfs-genomics) · [Validation evidence](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/SCIENTIFIC_VALIDATION_PROTOCOL.md) · [GitBook case](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/featured-engineering-project-sfs-genomics/sfs-genomics)
 
 ## Supporting evidence
 
@@ -83,7 +67,7 @@ The projects below use the same review structure. They are selected because they
 - **Verification:** Historical 28 October checkpoint: 16,088 tracked URLs, 725 documents, 353 candidates, 2,025 source-claim records and 15 automated tests; internal deployed protocol checks returned HTTP 200.
 - **Boundary:** Zero verified programmes at that checkpoint; catalogue incomplete; an authenticated ChatGPT/iOS invocation was not confirmed.
 - **Attribution:** Owner-directed semantic evidence states and eligibility limits; AI-assisted engineering.
-- **Inspect:** [Public case study](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/supporting-evidence/sfs-education-funding).
+- **Inspect:** [Public case study](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/featured-engineering-project-sfs-education-funding/sfs-education-funding).
 
 ### 5. POINCARÉ — external, scope-limited technical review
 
@@ -106,6 +90,13 @@ The projects below use the same review structure. They are selected because they
 
 I define the problem framing, requirements, technical boundaries, hypotheses, decision criteria and acceptance evidence. Implementation is AI-assisted; I review and verify the resulting work through code inspection, test design, CI and documented limits. I do **not** claim that every code line was written manually. I distinguish implemented, tested, observed in operation and still unverified.
 
-## Professional focus
+## Search terms for this professional function
 
-AI & Automation Solutions, technical business analysis, AI implementation and process automation — especially where analytical problem framing and technical delivery meet. Position titles are search labels; employers decide which of these capabilities are relevant to their specific position.
+- Junior / Associate Solutions Consultant — AI & Automation
+- Junior IT Consultant — Process Automation & Customer Advisory
+- Junior AI / GenAI Implementation Consultant
+- Technical Business Analyst — AI, Data or Automation
+- Junior Technical Solutions Engineer / Integration Consultant
+- Junior AI Transformation or Process Automation Consultant, where the role includes hands-on delivery
+
+The strongest fit is a position that combines business problem analysis, requirements, technical integration and evaluation — not a role limited to either slide-only strategy or isolated code production.
