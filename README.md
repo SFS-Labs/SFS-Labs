@@ -55,11 +55,25 @@ The projects below use the same review structure. They are selected because they
 - **Boundary:** Not a clinical diagnostic or validated personal risk model; only five reference loci in the bounded pilot.
 - **Inspect:** [Engineering case study](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/featured-engineering-project-sfs-genomics/sfs-genomics) · [Repository](https://github.com/SFS-Labs/sfs-genomics)
 
-### Additional evidence
+### 4. SFS Education Funding — evidence and eligibility architecture
 
-**SFS Education Funding — evidence architecture:** source discovery, document versions, claim extraction and reviewed eligibility rules are separate states. At the 28 October 2026 checkpoint: 16,088 tracked URLs, 725 documents, 353 candidates and **zero verified programmes**. [Public case study](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/featured-engineering-project-sfs-education-funding/sfs-education-funding).
+- **Problem:** Funding information is distributed across source sites and documents; a discovered item must not be mistaken for a verified programme or personal eligibility.
+- **Analysis:** Separated URL discovery, document retrieval/versioning, claim extraction, reviewed rules and programme verification; missing facts remain Unknown.
+- **Decision:** Do not mark a candidate eligible without verified source claims and reviewed requirements.
+- **Implementation:** Six-domain collection pipeline, persistent URL queue, versioned document records, relational evidence model, three-valued rules and seven OAuth-gated MCP tools.
+- **Verification:** Historical 28 October checkpoint: 16,088 tracked URLs, 725 documents, 353 candidates, 2,025 source-claim records and 15 automated tests; internal deployed protocol checks returned HTTP 200.
+- **Boundary:** Zero verified programmes at that checkpoint; catalogue incomplete; an authenticated ChatGPT/iOS invocation was not confirmed.
+- **Inspect:** [Public case study](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/featured-engineering-project-sfs-education-funding/sfs-education-funding).
 
-**POINCARÉ — external technical review:** 222 Foundry tests independently reproduced on the pinned source version; two Low findings and eight notes; nine remediation commits reviewed at source level. The developer's subsequent test suite was not independently rerun. [Review evidence](https://github.com/SFS-Labs/security-reviews/blob/main/README.md).
+### 5. POINCARÉ — external, scope-limited technical review
+
+- **Problem:** Examine a Solidity custom-curve hook against agreed manipulation, liquidity-accounting and configuration risks.
+- **Analysis:** Reviewed seven first-party Solidity files (~1,298 LOC) and independently reproduced the original Foundry test suite.
+- **Decision:** Reported two Low findings and eight notes with stated scope and evidence; did not present the work as a comprehensive audit.
+- **Implementation:** Delivered actionable findings and reviewed the developer's remediation changes at source level.
+- **Verification:** 222 original tests reproduced on the pinned source; nine remediation commits across 26 changed files inspected.
+- **Boundary:** The developer-reported revised test suite was not independently rerun; no production-security guarantee.
+- **Inspect:** [Review evidence](https://github.com/SFS-Labs/security-reviews/blob/main/README.md).
 
 ## Professional context
 
