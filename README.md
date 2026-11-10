@@ -50,7 +50,6 @@ The projects below use the same review structure. They are selected because they
 - **Verification:** 36 real local model inferences; a real n8n→LLM→SQLite end-to-end run including reject, restart and fail-closed; 124 Python tests in recorded CI runs.
 - **Boundary:** The 32-case routing pilot is synthetic and post-hoc; no customer deployment or measured ROI. A separate 96-case NLBSE evaluation is a different experiment and must not be merged with the urgency pilot.
 - **Attribution:** Owner-defined problem framing, urgency-risk challenge and evaluation gates; AI-assisted implementation and review.
-- **Attribution:** I defined the central questions, category/urgency split, hybrid hypothesis and decision criteria; implementation, calculations and reviews were AI-assisted, with observed CI evidence and documented limits.
 - **Inspect:** [Decision](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/DECISION_EVIDENCE_BRIEF.md) · [Research design](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/RESEARCH_DESIGN.md) · [E2E run](https://github.com/SFS-Labs/ai-knowledge-ops-lab/actions/runs/42413698800) · [NLBSE evaluation](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/evaluation/NLBSE_REAL_LLM_EVALUATION.md) · [Repository](https://github.com/SFS-Labs/ai-knowledge-ops-lab)
 
 ### 2. Tender Intelligence — product hypothesis and stop decision
@@ -62,7 +61,6 @@ The projects below use the same review structure. They are selected because they
 - **Verification:** Four model calls; both arms returned 32/32 correct facts, while expected source references supported 26/32 baseline answers and 25/32 SFS answers.
 - **Boundary:** Two runs per arm, one procurement procedure, preprocessed source facts; no general performance claim, customer ROI or product-market fit.
 - **Attribution:** Owner-set business hypothesis, A/B acceptance criteria and stop decision; implementation AI-assisted.
-- **Attribution:** I set the product hypothesis, evaluation priorities and stop decision; the iterative implementation and model work were AI-assisted.
 - **Inspect:** [Decision](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/DECISION-LOG.md) · [Method](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/METHODOLOGY.md) · [Aggregate results](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/data/ab-aggregate.json) · [Implementation](https://github.com/SFS-Labs/tender-intelligence-case-study)
 
 ### 3. SFS Genomics — data integration and evidence controls
@@ -74,7 +72,6 @@ The projects below use the same review structure. They are selected because they
 - **Verification:** 607,051 accepted SNP calls reconciled across 256 partitions; recorded authenticated client calls; OAuth/PKCE/DCR checks and a five-locus reference-validation pilot.
 - **Boundary:** Not a clinical diagnostic or validated personal risk model; only five reference loci in the bounded pilot.
 - **Attribution:** Owner-defined integration constraints, architecture and evidence gates; AI-assisted engineering and regression checks.
-- **Attribution:** I defined the mobile, persistence, authentication and scientific validity boundaries; technical implementation and regression work were AI-assisted.
 - **Inspect:** [Engineering decisions](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/PORTFOLIO.md) · [Implementation](https://github.com/SFS-Labs/sfs-genomics) · [Validation evidence](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/SCIENTIFIC_VALIDATION_PROTOCOL.md) · [GitBook case](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/featured-engineering-project-sfs-genomics/sfs-genomics)
 
 ## Supporting evidence
@@ -88,7 +85,6 @@ The projects below use the same review structure. They are selected because they
 - **Verification:** Historical 28 October checkpoint: 16,088 tracked URLs, 725 documents, 353 candidates, 2,025 source-claim records and 15 automated tests; internal deployed protocol checks returned HTTP 200.
 - **Boundary:** Zero verified programmes at that checkpoint; catalogue incomplete; an authenticated ChatGPT/iOS invocation was not confirmed.
 - **Attribution:** Owner-directed semantic evidence states and eligibility limits; AI-assisted engineering.
-- **Attribution:** I defined the distinction between discovery, evidence and eligibility and the abstention requirement; the pipeline and its tests were AI-assisted.
 - **Inspect:** [Public case study](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/featured-engineering-project-sfs-education-funding/sfs-education-funding).
 
 ### 5. POINCARÉ — external, scope-limited technical review
@@ -100,7 +96,6 @@ The projects below use the same review structure. They are selected because they
 - **Verification:** 222 original tests reproduced on the pinned source; nine remediation commits across 26 changed files inspected.
 - **Boundary:** The developer-reported revised test suite was not independently rerun; no production-security guarantee.
 - **Attribution:** Scope-limited review and findings ownership; AI-assisted documentation and analysis.
-- **Attribution:** I performed a bounded external review and assessed reported remediations at source level, with AI assistance in analysis and documentation; no manual-authorship or complete-audit claim.
 - **Inspect:** [Original and remediation review](https://github.com/SFS-Labs/SFS-Labs/blob/main/security-review/case-studies/poincare-2026.md) · [Repository](https://github.com/SFS-Labs/security-reviews).
 
 ## Professional context
