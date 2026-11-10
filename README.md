@@ -17,7 +17,7 @@ I analyze operational and technical problems, turn findings into testable requir
 | **Technical delivery and verification** | Integrate an executable Qwen → n8n → Python API → SQLite path; record negative paths, CI and acceptance results. | [Executed service-intake E2E](https://github.com/SFS-Labs/ai-knowledge-ops-lab/actions/runs/42413698800) |
 | **Evidence-based evaluation** | Compare alternatives, examine critical class failures and stop development when a hypothesis is unsupported. | [Tender decision log](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/DECISION-LOG.md); [NLBSE test](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/evaluation/NLBSE_REAL_LLM_EVALUATION.md) |
 
-These competencies connect in an iterative working process: **Discover → Translate → Design → Deliver → Evaluate**. Findings can change the initial question, requirements or design. This is a description of my work, not a judgment about a particular employer's role requirements.
+These competencies connect in an iterative working process: **Discover → Translate → Design → Deliver → Evaluate**. Findings can change the initial question, requirements or design.
 
 ## Selected projects — work and results
 
