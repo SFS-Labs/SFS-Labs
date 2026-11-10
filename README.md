@@ -1,45 +1,27 @@
 # Mathias Steinbach | AI & Automation Solutions
 
-**Problemdefinition · Business Analysis · Technical Implementation · Evidence-led Evaluation**  
+**Problem- und Prozessanalyse · Anforderungs- und Messkonzeption · Systemdesign · technische Integration · Evaluation**  
 Essen / NRW · [LinkedIn](https://www.linkedin.com/in/mathias-steinbach-513869446/) · mathias.steinbach@icloud.com
 
-I translate operational and technical problems into **testable requirements, implementable system designs and defensible decisions**. My work connects problem discovery, process and data analysis, AI-assisted implementation, systems integration and evidence-based evaluation.
+I analyze operational and technical problems, turn findings into testable requirements, design data and integration paths, and evaluate implemented solutions against explicit criteria. The selected projects below document **what I have done, what was executed and how it was checked**.
 
-**Professional function:** AI & Automation Solutions — from problem definition through technical implementation and evidence-based evaluation. The titles *Junior Solutions Consultant*, *AI Implementation Consultant* and *Technical Business Analyst* are overlapping market labels, not separate qualifications. For an individual application I select the relevant CV emphasis and only check genuine mandatory exclusions.
+[**Project overview and source evidence**](https://sfs-labs.github.io/ai-knowledge-ops-lab/recruiter.html) · [AI Knowledge Ops](https://github.com/SFS-Labs/ai-knowledge-ops-lab) · [Tender Intelligence](https://github.com/SFS-Labs/tender-intelligence-case-study) · [SFS Genomics](https://github.com/SFS-Labs/sfs-genomics)
 
-**Contribution and attribution:** I frame problems and hypotheses, specify requirements, criteria and design boundaries, challenge results and decide on Go/No-Go. Implementation is AI-assisted and checked with scoped source inspection, test execution and evidence records. No assertion of manual authorship of every line, client ROI or enterprise delivery follows from these projects.
+## Competencies demonstrated in practice
 
-**[Recruiter overview: role, evidence and selected work samples →](https://sfs-labs.github.io/ai-knowledge-ops-lab/recruiter.html)**
-
----
-
-## How I work: from problem to decision
-
-| Stage | Work performed | Observable output |
+| Competency | Observable work | Evidence |
 |---|---|---|
-| **1. Discover** | Clarify the actual problem, user context, process, constraints and source data. | Problem statement; known facts, assumptions and unknowns. |
-| **2. Translate** | Convert the problem into requirements, dimensions, measurable criteria and acceptance conditions. | Requirements and evidence contract; baseline and decision criteria. |
-| **3. Design** | Define data flows, interfaces, system boundaries, control points and failure handling. | Architecture and process logic that engineering work can use. |
-| **4. Deliver** | Coordinate AI-assisted implementation, integrate APIs/workflows/storage and inspect changes. | Executable workflow or prototype with traceable implementation decisions. |
-| **5. Evaluate** | Reproduce tests, compare alternatives, inspect failure costs and state what the evidence does not establish. | Verification record, risk assessment and Go/No-Go decision. |
+| **Problem and process analysis** | Separate request categories, urgency, process observations and untested assumptions. | [AI Knowledge Ops: decision and research](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/DECISION_EVIDENCE_BRIEF.md) |
+| **Requirements and measurement design** | Define acceptance criteria, baselines, data sources, error costs and falsifiable hypotheses. | [Routing research design](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/RESEARCH_DESIGN.md); [Tender methodology](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/METHODOLOGY.md) |
+| **Technical architecture and integration** | Design and connect APIs, workflows, storage, authentication and controlled MCP tools. | [Genomics architecture and observed integration](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/PORTFOLIO.md) |
+| **Technical delivery and verification** | Integrate an executable Qwen → n8n → Python API → SQLite path; record negative paths, CI and acceptance results. | [Executed service-intake E2E](https://github.com/SFS-Labs/ai-knowledge-ops-lab/actions/runs/42413698800) |
+| **Evidence-based evaluation** | Compare alternatives, examine critical class failures and stop development when a hypothesis is unsupported. | [Tender decision log](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/DECISION-LOG.md); [NLBSE test](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/evaluation/NLBSE_REAL_LLM_EVALUATION.md) |
 
-The sequence is iterative: negative evidence can change the problem framing, criteria or system design.
+These competencies connect in an iterative working process: **Discover → Translate → Design → Deliver → Evaluate**. Findings can change the initial question, requirements or design. This is a description of my work, not a judgment about a particular employer's role requirements.
 
-## Employer need → existing evidence
+## Selected projects — work and results
 
-| Common task | Demonstrated competence | Primary evidence |
-|---|---|---|
-| Identify the actual service or product problem | **Discover**: separate initial request from measurable problem | [Service intake decision brief](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/DECISION_EVIDENCE_BRIEF.md); [Tender decision log](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/DECISION-LOG.md) |
-| Translate ambiguity into testable requirements and trade-offs | **Translate**: categories, baselines, error costs and explicit uncertainty | [Research design](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/RESEARCH_DESIGN.md) |
-| Design bounded systems and decision controls | **Design**: data plane, authentication, interfaces, abstention | [Genomics engineering record](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/PORTFOLIO.md) |
-| Integrate and actually execute a technical path | **Deliver**: real local Qwen/n8n/Python/SQLite run and authenticated MCP integration | [Service-intake E2E CI](https://github.com/SFS-Labs/ai-knowledge-ops-lab/actions/runs/42413698800); [Genomics source](https://github.com/SFS-Labs/sfs-genomics) |
-| Re-evaluate a hypothesis when data contradict it | **Evaluate**: negative A/B result, uncertainty, bounded independent review | [Tender A/B method](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/METHODOLOGY.md); [NLBSE diagnostic](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/evaluation/NLBSE_REAL_LLM_EVALUATION.md) |
-
-The five stages form a feedback loop rather than a rigid waterfall. Role titles are market labels for overlapping tasks, not separate claims that I have already held each position. The linked projects are personal or explicitly scope-limited external work, not evidence of enterprise-wide transformation.
-
-## Selected evidence
-
-The projects below use the same review structure. They are selected because they show the work behind a solution, not because they share a technology stack.
+Three primary examples show analysis and technical execution, product-hypothesis evaluation, and end-to-end integration. Two additional examples document provenance modeling and a bounded external review. Each detailed record links its source and scope.
 
 ### 1. AI Knowledge Ops Lab — service intake and routing
 
