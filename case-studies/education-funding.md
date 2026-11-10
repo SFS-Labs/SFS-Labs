@@ -36,8 +36,6 @@ Das Projekt verknüpft Quellenerfassung, Datenversionierung, relationale Belegke
 
 Die technische Schnittstelle war intern über OAuth/Cloudflare Access kontrolliert und wurde auf Protokollebene getestet. Eine vollständig bestätigte persönliche ChatGPT/iOS-End-to-End-Nutzung ist **nicht belegt**. Die Cloudflare-D1-Lesequoten begrenzten weitere Prüfungen zum historischen Zeitpunkt. Es gibt keinen Nachweis, dass die protokollierte Sammlung vollständig ist.
 
-**Nicht behauptet:** verifizierte Förderberechtigung, vollständig geprüfte Förderprogramme, ausgelieferter Kundendienst, nachgewiesene Kostenersparnis oder ein fertiges kommerzielles Produkt.
-
 Die Fallstudie enthält keine persönlichen Förderanträge, Bewerberprofile, Zugangsdaten oder Kopien fremder Quellendokumente. Das Implementierungsrepository [education-funding-mcp](https://github.com/SFS-Labs/education-funding-mcp) ist nicht öffentlich lesbar; der Link ist daher lediglich eine Repository-Identifikation und kein öffentlicher Primärnachweis.
 
 [Weitere Projekte und Kompetenzen](../README.md)
