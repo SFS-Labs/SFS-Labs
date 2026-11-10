@@ -70,7 +70,7 @@ The projects below use the same review structure. They are selected because they
 - **Verification:** 607,051 accepted SNP calls reconciled across 256 partitions; recorded authenticated client calls; OAuth/PKCE/DCR checks and a five-locus reference-validation pilot.
 - **Boundary:** Not a clinical diagnostic or validated personal risk model; only five reference loci in the bounded pilot.
 - **Attribution:** Owner-defined integration constraints, architecture and evidence gates; AI-assisted engineering and regression checks.
-- **Inspect:** [Engineering decisions](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/PORTFOLIO.md) · [Implementation](https://github.com/SFS-Labs/sfs-genomics) · [Validation evidence](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/SCIENTIFIC_VALIDATION_PROTOCOL.md) · [GitBook case](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/featured-engineering-project-sfs-genomics/sfs-genomics)
+- **Inspect:** [Engineering decisions](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/PORTFOLIO.md) · [Implementation](https://github.com/SFS-Labs/sfs-genomics) · [Validation evidence](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/SCIENTIFIC_VALIDATION_PROTOCOL.md) · [GitBook case](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/core-evidence-discover-translate-design-deliver-evaluate/sfs-genomics)
 
 ## Supporting evidence
 
@@ -83,7 +83,7 @@ The projects below use the same review structure. They are selected because they
 - **Verification:** Historical 28 October checkpoint: 16,088 tracked URLs, 725 documents, 353 candidates, 2,025 source-claim records and 15 automated tests; internal deployed protocol checks returned HTTP 200.
 - **Boundary:** Zero verified programmes at that checkpoint; catalogue incomplete; an authenticated ChatGPT/iOS invocation was not confirmed.
 - **Attribution:** Owner-directed semantic evidence states and eligibility limits; AI-assisted engineering.
-- **Inspect:** [Public case study](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/featured-engineering-project-sfs-education-funding/sfs-education-funding).
+- **Inspect:** [Public case study](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/supporting-evidence/sfs-education-funding).
 
 ### 5. POINCARÉ — external, scope-limited technical review
 
