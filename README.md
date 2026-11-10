@@ -5,10 +5,6 @@ Essen / NRW · [LinkedIn](https://www.linkedin.com/in/mathias-steinbach-51386944
 
 I translate operational and technical problems into **testable requirements, implementable system designs and defensible decisions**. My work connects problem discovery, process and data analysis, AI-assisted implementation, systems integration and evidence-based evaluation.
 
-**Professional function:** AI & Automation Solutions — from problem definition through technical implementation and evidence-based evaluation. The titles *Junior Solutions Consultant*, *AI Implementation Consultant* and *Technical Business Analyst* are overlapping market labels, not separate qualifications. For an individual application I select the relevant CV emphasis and only check genuine mandatory exclusions.
-
-**Contribution and attribution:** I frame problems and hypotheses, specify requirements, criteria and design boundaries, challenge results and decide on Go/No-Go. Implementation is AI-assisted and checked with scoped source inspection, test execution and evidence records. No assertion of manual authorship of every line, client ROI or enterprise delivery follows from these projects.
-
 **[Recruiter overview: role, evidence and selected work samples →](https://sfs-labs.github.io/ai-knowledge-ops-lab/recruiter.html)**
 
 ---
@@ -25,17 +21,19 @@ I translate operational and technical problems into **testable requirements, imp
 
 The sequence is iterative: negative evidence can change the problem framing, criteria or system design.
 
-## Employer need → existing evidence
+## Competences in practice — selected proof
 
-| Common task | Demonstrated competence | Primary evidence |
+The examples below show **what I do**, **how I apply it** and **where the work can be inspected**. Employers can assess the relevance to their own role and environment.
+
+| Competence | Demonstrated application | Inspectable work |
 |---|---|---|
-| Identify the actual service or product problem | **Discover**: separate initial request from measurable problem | [Service intake decision brief](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/DECISION_EVIDENCE_BRIEF.md); [Tender decision log](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/DECISION-LOG.md) |
-| Translate ambiguity into testable requirements and trade-offs | **Translate**: categories, baselines, error costs and explicit uncertainty | [Research design](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/RESEARCH_DESIGN.md) |
-| Design bounded systems and decision controls | **Design**: data plane, authentication, interfaces, abstention | [Genomics engineering record](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/PORTFOLIO.md) |
-| Integrate and actually execute a technical path | **Deliver**: real local Qwen/n8n/Python/SQLite run and authenticated MCP integration | [Service-intake E2E CI](https://github.com/SFS-Labs/ai-knowledge-ops-lab/actions/runs/42413698800); [Genomics source](https://github.com/SFS-Labs/sfs-genomics) |
-| Re-evaluate a hypothesis when data contradict it | **Evaluate**: negative A/B result, uncertainty, bounded independent review | [Tender A/B method](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/METHODOLOGY.md); [NLBSE diagnostic](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/evaluation/NLBSE_REAL_LLM_EVALUATION.md) |
+| **Discover — clarify the problem** | Distinguished service request category from urgency; challenged the assumed value of procurement intelligence. | [Service-intake decision](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/DECISION_EVIDENCE_BRIEF.md) · [Tender decision log](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/DECISION-LOG.md) |
+| **Translate — make questions testable** | Defined classifications, comparison baselines, review criteria and explicit failure costs. | [Research design](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/RESEARCH_DESIGN.md) |
+| **Design — define system boundaries** | Designed mobile data ingestion, persistent storage, authentication and evidence/abstention gates. | [Genomics engineering record](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/PORTFOLIO.md) |
+| **Deliver — integrate and test** | Connected local Qwen, n8n, Python and SQLite; implemented authenticated cloud/MCP access. | [Executed service-intake E2E](https://github.com/SFS-Labs/ai-knowledge-ops-lab/actions/runs/42413698800) · [Genomics source](https://github.com/SFS-Labs/sfs-genomics) |
+| **Evaluate — challenge decisions with evidence** | Recorded negative procurement A/B results, classification errors and scope-limited external findings. | [Tender methodology](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/METHODOLOGY.md) · [NLBSE evaluation](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/evaluation/NLBSE_REAL_LLM_EVALUATION.md) |
 
-The five stages form a feedback loop rather than a rigid waterfall. Role titles are market labels for overlapping tasks, not separate claims that I have already held each position. The linked projects are personal or explicitly scope-limited external work, not evidence of enterprise-wide transformation.
+The stages overlap: results can invalidate an initial assumption and change the technical path. These examples demonstrate completed work within their documented scopes; they are not a claim of having held every job title associated with these activities.
 
 ## Selected evidence
 
@@ -108,13 +106,6 @@ The projects below use the same review structure. They are selected because they
 
 I define the problem framing, requirements, technical boundaries, hypotheses, decision criteria and acceptance evidence. Implementation is AI-assisted; I review and verify the resulting work through code inspection, test design, CI and documented limits. I do **not** claim that every code line was written manually. I distinguish implemented, tested, observed in operation and still unverified.
 
-## Search terms for this professional function
+## Professional focus
 
-- Junior / Associate Solutions Consultant — AI & Automation
-- Junior IT Consultant — Process Automation & Customer Advisory
-- Junior AI / GenAI Implementation Consultant
-- Technical Business Analyst — AI, Data or Automation
-- Junior Technical Solutions Engineer / Integration Consultant
-- Junior AI Transformation or Process Automation Consultant, where the role includes hands-on delivery
-
-The strongest fit is a position that combines business problem analysis, requirements, technical integration and evaluation — not a role limited to either slide-only strategy or isolated code production.
+AI & Automation Solutions, technical business analysis, AI implementation and process automation — especially where analytical problem framing and technical delivery meet. Position titles are search labels; employers decide which of these capabilities are relevant to their specific position.
