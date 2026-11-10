@@ -1,102 +1,60 @@
 # Mathias Steinbach | AI & Automation Solutions
 
 **Problem- und Prozessanalyse · Anforderungs- und Messkonzeption · Systemdesign · technische Integration · Evaluation**  
-Essen / NRW · [LinkedIn](https://www.linkedin.com/in/mathias-steinbach-513869446/) · mathias.steinbach@icloud.com
+Technical Onboarding Support (Werkstudent) · Essen / NRW · [LinkedIn](https://www.linkedin.com/in/mathias-steinbach-513869446/) · [E-Mail](mailto:mathias.steinbach@icloud.com)
 
-I analyze operational and technical problems, turn findings into testable requirements, design data and integration paths, and evaluate implemented solutions against explicit criteria. The selected projects below document **what I have done, what was executed and how it was checked**.
+I analyse technical and operational questions, define testable requirements, connect data and software interfaces, and assess results against explicit criteria. My experience combines direct technical user support with independently developed, AI-assisted engineering projects. The examples below link the actual work, observed results and primary records.
 
-[**Project overview and source evidence**](https://sfs-labs.github.io/ai-knowledge-ops-lab/recruiter.html) · [AI Knowledge Ops](https://github.com/SFS-Labs/ai-knowledge-ops-lab) · [Tender Intelligence](https://github.com/SFS-Labs/tender-intelligence-case-study) · [SFS Genomics](https://github.com/SFS-Labs/sfs-genomics)
+[**Project overview**](https://sfs-labs.github.io/ai-knowledge-ops-lab/recruiter.html) · [**Technical documentation**](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/) · [**Source repositories**](https://github.com/SFS-Labs)
 
-## Competencies demonstrated in practice
+## Selected work
 
-| Competency | Observable work | Evidence |
-|---|---|---|
-| **Problem and process analysis** | Separate request categories, urgency, process observations and untested assumptions. | [AI Knowledge Ops: decision and research](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/DECISION_EVIDENCE_BRIEF.md) |
-| **Requirements and measurement design** | Define acceptance criteria, baselines, data sources, error costs and falsifiable hypotheses. | [Routing research design](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/RESEARCH_DESIGN.md); [Tender methodology](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/METHODOLOGY.md) |
-| **Technical architecture and integration** | Design and connect APIs, workflows, storage, authentication and controlled MCP tools. | [Genomics architecture and observed integration](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/PORTFOLIO.md) |
-| **Technical delivery and verification** | Integrate an executable Qwen → n8n → Python API → SQLite path; record negative paths, CI and acceptance results. | [Executed service-intake E2E](https://github.com/SFS-Labs/ai-knowledge-ops-lab/actions/runs/42413698800) |
-| **Evidence-based evaluation** | Compare alternatives, examine critical class failures and stop development when a hypothesis is unsupported. | [Tender decision log](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/DECISION-LOG.md); [NLBSE test](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/evaluation/NLBSE_REAL_LLM_EVALUATION.md) |
+### AI Knowledge Ops Lab · service intake, integration and testing
 
-These competencies connect in an iterative working process: **Discover → Translate → Design → Deliver → Evaluate**. Findings can change the initial question, requirements or design.
+**Built and executed:** A local Qwen → n8n → Python API → SQLite workflow with approval, rejection, restart and fail-closed paths. Recorded 36 real local model inferences and 124 Python tests.
 
-## Selected projects — work and results
+**Assessed:** A synthetic, retrospective 32-case routing pilot achieved 22/32 correct classifications in the hybrid path but missed 5/9 urgent cases. A *separate* 96-case evaluation on genuine NLBSE issues achieved 54/96 for Qwen versus 46/96 for a keyword baseline; uncertainty includes no improvement. Human review remains necessary for critical cases. Independent Volvo event data measure process transitions, not savings or customer ROI.
 
-Three primary examples show analysis and technical execution, product-hypothesis evaluation, and end-to-end integration. Two additional examples document provenance modeling and a bounded external review. Each detailed record links its source and scope.
+[Executed end-to-end test](https://github.com/SFS-Labs/ai-knowledge-ops-lab/actions/runs/42413698800) · [Decision brief](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/DECISION_EVIDENCE_BRIEF.md) · [NLBSE results](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/evaluation/NLBSE_REAL_LLM_EVALUATION.md) · [Repository](https://github.com/SFS-Labs/ai-knowledge-ops-lab)
 
-### 1. AI Knowledge Ops Lab — service intake and routing
+### Tender Intelligence · source integration and product evaluation
 
-- **Problem:** Structure incoming service requests and route them without hiding urgent cases behind a better aggregate accuracy score.
-- **Analysis:** Separated request category from urgency; compared LLM-only, deterministic rules and a hybrid policy; investigated false-high and missed-high cases.
-- **Decision:** Retain human review for conflicts and do not treat higher overall accuracy as sufficient evidence for operational release.
-- **Implementation:** Local Qwen inference → n8n → Python API → SQLite, with separate review/approval and explicit failure paths.
-- **Verification:** 36 real local model inferences; a real n8n→LLM→SQLite end-to-end run including reject, restart and fail-closed; 124 Python tests in recorded CI runs.
-- **Boundary:** The 32-case routing pilot is synthetic and post-hoc; no customer deployment or measured ROI. A separate 96-case NLBSE evaluation is a different experiment and must not be merged with the urgency pilot.
-- **Attribution:** Owner-defined problem framing, urgency-risk challenge and evaluation gates; AI-assisted implementation and review.
-- **Inspect:** [Decision](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/DECISION_EVIDENCE_BRIEF.md) · [Research design](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/RESEARCH_DESIGN.md) · [E2E run](https://github.com/SFS-Labs/ai-knowledge-ops-lab/actions/runs/42413698800) · [NLBSE evaluation](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/evaluation/NLBSE_REAL_LLM_EVALUATION.md) · [Repository](https://github.com/SFS-Labs/ai-knowledge-ops-lab)
+**Built:** A Cloudflare Workers prototype using the official EU TED Search API, deterministic source processing and a documented evaluation design.
 
-### 2. Tender Intelligence — product hypothesis and stop decision
+**Assessed:** Four controlled model calls, two per arm. Both paths returned 32/32 correct prepared facts; the expected source references were present for 26/32 baseline answers and 25/32 SFS answers. The comparison did not support a quality advantage, so further commercial development was paused. This was one procedure, not a customer outcome or general model benchmark.
 
-- **Problem:** Determine whether adding AI-supported source and change intelligence improves decisions based on EU public procurement notices.
-- **Analysis:** Integrated the official TED Search API, tested document/version signals and compared two processing paths on the same prepared evidence with a predefined 16-point rubric.
-- **Decision:** The SFS path showed no evidenced quality advantage; commercial development was paused rather than presenting a negative result as success.
-- **Implementation:** Modular JavaScript service on Cloudflare Workers, TED API integration, deterministic normalization and a source-aware Decision Brief.
-- **Verification:** Four model calls; both arms returned 32/32 correct facts, while expected source references supported 26/32 baseline answers and 25/32 SFS answers.
-- **Boundary:** Two runs per arm, one procurement procedure, preprocessed source facts; no general performance claim, customer ROI or product-market fit.
-- **Attribution:** Owner-set business hypothesis, A/B acceptance criteria and stop decision; implementation AI-assisted.
-- **Inspect:** [Decision](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/DECISION-LOG.md) · [Method](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/METHODOLOGY.md) · [Aggregate results](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/data/ab-aggregate.json) · [Implementation](https://github.com/SFS-Labs/tender-intelligence-case-study)
+[Decision log](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/DECISION-LOG.md) · [Methodology](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/docs/METHODOLOGY.md) · [Aggregate results](https://github.com/SFS-Labs/tender-intelligence-case-study/blob/main/data/ab-aggregate.json) · [Repository](https://github.com/SFS-Labs/tender-intelligence-case-study)
 
-### 3. SFS Genomics — data integration and evidence controls
+### SFS Genomics · mobile data pipeline and authenticated MCP
 
-- **Problem:** Turn a large consumer SNP-array export into a persistent, authenticated and scientifically bounded research interface from an iPhone-first workflow.
-- **Analysis:** Separated raw genotype calls, public GWAS associations, Ensembl reference-population LD and clinical endpoints; defined checks for build, alleles, strand, linkage and evidence sufficiency.
-- **Decision:** Abstain when reference or study evidence is incomplete; do not convert associations or successful storage into clinical conclusions.
-- **Implementation:** Mobile parser and staged upload → 256 EU Cloudflare D1 partitions → OAuth-protected remote MCP interface and typed tools.
-- **Verification:** 607,051 accepted SNP calls reconciled across 256 partitions; recorded authenticated client calls; OAuth/PKCE/DCR checks and a five-locus reference-validation pilot.
-- **Boundary:** Not a clinical diagnostic or validated personal risk model; only five reference loci in the bounded pilot.
-- **Attribution:** Owner-defined integration constraints, architecture and evidence gates; AI-assisted engineering and regression checks.
-- **Inspect:** [Engineering decisions](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/PORTFOLIO.md) · [Implementation](https://github.com/SFS-Labs/sfs-genomics) · [Validation evidence](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/SCIENTIFIC_VALIDATION_PROTOCOL.md) · [GitBook case](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/core-evidence-discover-translate-design-deliver-evaluate/sfs-genomics)
+**Built and checked:** An iPhone-first parser and import flow, EU Cloudflare D1 storage, OAuth-protected MCP access and selected GWAS/Ensembl research integrations. Reconciled **607,051 accepted SNP calls in 256 persistent partitions**, recorded authenticated tool calls and performed a five-locus reference-validation pilot.
 
-## Supporting evidence
+**Scope:** Engineering and bounded reference checks, not clinical diagnosis, independent laboratory confirmation or validated personal risk prediction.
 
-### 4. SFS Education Funding — evidence and eligibility architecture
+[Engineering record](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/PORTFOLIO.md) · [Scientific validation protocol](https://github.com/SFS-Labs/sfs-genomics/blob/main/genomics/SCIENTIFIC_VALIDATION_PROTOCOL.md) · [Repository](https://github.com/SFS-Labs/sfs-genomics)
 
-- **Problem:** Funding information is distributed across source sites and documents; a discovered item must not be mistaken for a verified programme or personal eligibility.
-- **Analysis:** Separated URL discovery, document retrieval/versioning, claim extraction, reviewed rules and programme verification; missing facts remain Unknown.
-- **Decision:** Do not mark a candidate eligible without verified source claims and reviewed requirements.
-- **Implementation:** Six-domain collection pipeline, persistent URL queue, versioned document records, relational evidence model, three-valued rules and seven OAuth-gated MCP tools.
-- **Verification:** Historical 28 October checkpoint: 16,088 tracked URLs, 725 documents, 353 candidates, 2,025 source-claim records and 15 automated tests; internal deployed protocol checks returned HTTP 200.
-- **Boundary:** Zero verified programmes at that checkpoint; catalogue incomplete; an authenticated ChatGPT/iOS invocation was not confirmed.
-- **Attribution:** Owner-directed semantic evidence states and eligibility limits; AI-assisted engineering.
-- **Inspect:** [Public case study](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/supporting-evidence/sfs-education-funding).
+## Additional evidence
 
-### 5. POINCARÉ — external, scope-limited technical review
+**[SFS Education Funding](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/supporting-evidence/sfs-education-funding)** — Designed source and claim provenance, versioned document records, three-valued eligibility rules and seven bounded MCP tools. The historical 28 October checkpoint contained 16,088 URLs, 725 documents and 353 candidates, but **zero verified funding programmes**. Protocol checks are not evidence of confirmed ChatGPT/iOS use.
 
-- **Problem:** Examine a Solidity custom-curve hook against agreed manipulation, liquidity-accounting and configuration risks.
-- **Analysis:** Reviewed seven first-party Solidity files (~1,298 LOC) and independently reproduced the original Foundry test suite.
-- **Decision:** Reported two Low findings and eight notes with stated scope and evidence; did not present the work as a comprehensive audit.
-- **Implementation:** Delivered actionable findings and reviewed the developer's remediation changes at source level.
-- **Verification:** 222 original tests reproduced on the pinned source; nine remediation commits across 26 changed files inspected.
-- **Boundary:** The developer-reported revised test suite was not independently rerun; no production-security guarantee.
-- **Attribution:** Scope-limited review and findings ownership; AI-assisted documentation and analysis.
-- **Inspect:** [Original and remediation review](https://github.com/SFS-Labs/SFS-Labs/blob/main/security-review/case-studies/poincare-2026.md) · [Repository](https://github.com/SFS-Labs/security-reviews).
+**[POINCARÉ external Solidity review](https://github.com/SFS-Labs/SFS-Labs/blob/main/security-review/case-studies/poincare-2026.md)** — Reviewed a pinned seven-file scope, independently reproduced 222 original Foundry tests, documented two Low findings and eight notes, and inspected nine subsequent developer remediation commits across 26 files. Revised-branch tests were not independently rerun; this was not a comprehensive audit.
 
-## Professional context
+## How the work connects
 
-- **Technical Onboarding Support**, Dr. Schengber & Friends GmbH (working student, remote; since 07/2026): analyse and resolve technical user problems, isolate causes and explain solutions.
-- **Independent online retail and reselling** (since 11/2022): sourcing and price assessment, customer contact, complaints and operational fulfilment.
-- **B.Sc. Finance & Capital Markets**, TH Köln (ongoing).
+| Competency | Demonstrated application |
+| --- | --- |
+| **Discover · Problem and process analysis** | Separate request category, urgency, observations and assumptions; identify falsifiable questions. |
+| **Translate · Requirements and measurement** | Specify baselines, acceptance checks, error costs and source quality criteria. |
+| **Design · Architecture and integration** | Connect APIs, workflows, authentication, storage and controlled tool interfaces. |
+| **Deliver · Implementation and verification** | Bring AI-assisted components into executable systems; test normal and negative paths. |
+| **Evaluate · Evidence and decisions** | Compare alternatives, examine counterevidence and document when not to proceed. |
 
-## Attribution and verification
+The sequence **Discover → Translate → Design → Deliver → Evaluate** is iterative: results can change the initial question or architecture. Individual projects demonstrate different parts of this work.
 
-I define the problem framing, requirements, technical boundaries, hypotheses, decision criteria and acceptance evidence. Implementation is AI-assisted; I review and verify the resulting work through code inspection, test design, CI and documented limits. I do **not** claim that every code line was written manually. I distinguish implemented, tested, observed in operation and still unverified.
+## Professional background and attribution
 
-## Search terms for this professional function
+- **Technical Onboarding Support**, Dr. Schengber & Friends GmbH — working student, remote, since 07/2026. Technical user enquiries, issue isolation and explanation of solutions.
+- **Independent online retail and reselling**, since 11/2022. Price assessment, sourcing, customer communication, complaints and fulfilment.
+- **B.Sc. Finance & Capital Markets**, TH Köln — ongoing.
 
-- Junior / Associate Solutions Consultant — AI & Automation
-- Junior IT Consultant — Process Automation & Customer Advisory
-- Junior AI / GenAI Implementation Consultant
-- Technical Business Analyst — AI, Data or Automation
-- Junior Technical Solutions Engineer / Integration Consultant
-- Junior AI Transformation or Process Automation Consultant, where the role includes hands-on delivery
-
-The strongest fit is a position that combines business problem analysis, requirements, technical integration and evaluation — not a role limited to either slide-only strategy or isolated code production.
+I take responsibility for documented problem framing, requirements, evaluation criteria, architectural decisions and review of results. Implementation and portions of the analysis are **AI-assisted**; source records and tests establish what was executed, not manual authorship of every line. Independent project prototypes and research findings are not presented as production customer deployments or measured ROI.
