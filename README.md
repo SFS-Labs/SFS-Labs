@@ -35,7 +35,7 @@ I analyse technical and operational questions, define testable requirements, con
 
 ## Additional evidence
 
-**[SFS Education Funding](https://sfs-labs.gitbook.io/sfs-labs-docs/ai-docs/supporting-evidence/sfs-education-funding)** — Designed source and claim provenance, versioned document records, three-valued eligibility rules and seven bounded MCP tools. The historical 28 October checkpoint contained 16,088 URLs, 725 documents and 353 candidates, but **zero verified funding programmes**. Protocol checks are not evidence of confirmed ChatGPT/iOS use.
+**[SFS Education Funding](https://github.com/SFS-Labs/SFS-Labs/blob/main/case-studies/education-funding.md)** — Designed source and claim provenance, versioned document records, three-valued eligibility rules and seven bounded MCP tools. The historical 28 October checkpoint contained 16,088 URLs, 725 documents and 353 candidates, but **zero verified funding programmes**. Protocol checks are not evidence of confirmed ChatGPT/iOS use.
 
 **[POINCARÉ external Solidity review](https://github.com/SFS-Labs/SFS-Labs/blob/main/security-review/case-studies/poincare-2026.md)** — Reviewed a pinned seven-file scope, independently reproduced 222 original Foundry tests, documented two Low findings and eight notes, and inspected nine subsequent developer remediation commits across 26 files. Revised-branch tests were not independently rerun; this was not a comprehensive audit.
 
