@@ -88,6 +88,7 @@ I define the problem framing, requirements, technical boundaries, hypotheses, de
 ## Roles where this evidence is relevant
 
 - Junior / Associate Solutions Consultant — AI & Automation
+- Junior IT Consultant — Process Automation & Customer Advisory
 - Junior AI / GenAI Implementation Consultant
 - Technical Business Analyst — AI, Data or Automation
 - Junior Technical Solutions Engineer / Integration Consultant
