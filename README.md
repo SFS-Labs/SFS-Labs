@@ -1,7 +1,9 @@
-<img src="https://raw.githubusercontent.com/SFS-Labs/SFS-Labs/main/branding/sfs-lockup-light.svg" width="540" alt="SFS.Labs — Applied AI · Automation · Technical Research" />\n\n# Mathias Steinbach | AI & Automation Solutions
+<img src="https://raw.githubusercontent.com/SFS-Labs/SFS-Labs/main/branding/sfs-lockup-light.svg" width="540" alt="SFS.Labs — Applied AI · Automation · Technical Research" />
+
+# Mathias Steinbach | AI & Automation Solutions
 
 **Problem- und Prozessanalyse · Anforderungs- und Messkonzeption · Systemdesign · technische Integration · Evaluation**  
-Technical Onboarding Support (Werkstudent) · Essen / NRW · [LinkedIn](https://www.linkedin.com/in/mathias-steinbach-513869446/) · [E-Mail](mailto:mathias.steinbach@icloud.com)
+Technical Onboarding Support (Werkstudent) · Essen / NRW · [LinkedIn](https://www.linkedin.com/in/mathias-steinbach/) · [E-Mail](mailto:mathias.steinbach@icloud.com)
 
 I analyse technical and operational questions, define testable requirements, connect data and software interfaces, and assess results against explicit criteria. My experience combines direct technical user support with independently developed, AI-assisted engineering projects. The examples below link the actual work, observed results and primary records.
 
@@ -37,7 +39,7 @@ I analyse technical and operational questions, define testable requirements, con
 
 **[SFS Education Funding](https://github.com/SFS-Labs/SFS-Labs/blob/main/case-studies/education-funding.md)** — Designed source and claim provenance, versioned document records, three-valued eligibility rules and seven bounded MCP tools. The historical 28 October checkpoint contained 16,088 URLs, 725 documents and 353 candidates, but **zero verified funding programmes**.
 
-**[POINCARÉ external Solidity review](https://github.com/SFS-Labs/SFS-Labs/blob/main/security-review/case-studies/poincare-2026.md)** — Reviewed a pinned seven-file scope, independently reproduced 222 original Foundry tests, documented two Low findings and eight notes, and inspected nine subsequent developer remediation commits across 26 files. Revised-branch tests were not independently rerun;
+**[POINCARÉ external Solidity review](https://github.com/SFS-Labs/SFS-Labs/blob/main/security-review/case-studies/poincare-2026.md)** — Reviewed a pinned seven-file scope, independently reproduced 222 original Foundry tests, documented two Low findings and eight notes, and inspected nine subsequent developer remediation commits across 26 files. Revised-branch tests were not independently rerun.
 
 ## How the work connects
 
