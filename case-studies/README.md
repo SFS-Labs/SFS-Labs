@@ -44,6 +44,11 @@ Quellen erfasst und versioniert, Claims und Kandidaten voneinander getrennt, Eli
 
 Sieben First-Party-Dateien innerhalb des vereinbarten Scope geprüft; **222 originale Foundry-Tests** unabhängig reproduziert, **zwei Low-Befunde** und **acht Hinweise** dokumentiert. Neun spätere Entwickler-Commits mit Änderungen in 26 Dateien auf Quellcodeebene eingesehen; überarbeitete Tests **nicht** unabhängig neu ausgeführt.
 
+## Weitere technische Nachweise
+
+- **REA Stack** — [Abnahme der begrenzten MCP-Orchestrierung](https://github.com/SFS-Labs/security-reviews/blob/main/docs/CAMBER_MULTITOOL_ACCEPTANCE.md) und [erfolgreicher Prüflauf](https://github.com/SFS-Labs/security-reviews/actions/runs/40716523503).
+- **SFS AI Docs** — [Fallstudie zur Dokumentations- und Archivierungsstrecke](sfs-ai-docs.md) mit öffentlichem GitHub-Actions-Prüflauf.
+
 ## Fachliche Arbeitsweise
 
 **Discover → Translate → Design → Deliver → Evaluate** beschreibt eine iterative Verbindung von Problemdefinition, Anforderungen, Lösungsentwurf, technischer Ausführung und Ergebnisprüfung.
