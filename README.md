@@ -15,7 +15,7 @@ I analyse technical and operational questions, define testable requirements, con
 
 **Built and executed:** A local Qwen → n8n → Python API → SQLite workflow with approval, rejection, restart and fail-closed paths. Recorded 36 real local model inferences and 135 Python tests (rechecked 10 November 2026).
 
-**Assessed:** A synthetic, retrospective 32-case routing pilot achieved 22/32 correct classifications in the hybrid path but missed 5/9 urgent cases. A *separate*, later 96-case evaluation on genuine NLBSE issues achieved 55/96 with Qwen v2 versus 46/96 for a keyword baseline; the paired uncertainty interval includes no difference. Human review remains necessary for critical cases.
+**Assessed:** A synthetic, retrospective 32-case routing pilot achieved 22/32 correct classifications in the hybrid path but missed 5/9 urgent cases. A 10 November repeat on the same 96 genuine NLBSE issues as the earlier v2 run achieved 55/96 with Qwen v2 versus 46/96 for a keyword baseline; the paired uncertainty interval includes no difference. Human review remains necessary for critical cases.
 
 [Executed end-to-end test](https://github.com/SFS-Labs/ai-knowledge-ops-lab/actions/runs/42828304593/job/129871453222) · [Decision brief](https://github.com/SFS-Labs/ai-knowledge-ops-lab/blob/main/showcases/internal-service-intake/DECISION_EVIDENCE_BRIEF.md) · [NLBSE retest](https://github.com/SFS-Labs/ai-knowledge-ops-lab/actions/runs/42827473405/job/129868488355) · [Repository](https://github.com/SFS-Labs/ai-knowledge-ops-lab)
 
