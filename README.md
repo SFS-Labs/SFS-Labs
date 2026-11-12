@@ -11,6 +11,12 @@ I analyse technical and operational questions, define testable requirements, con
 
 ## Selected work
 
+### HubSpot–Stripe · billing reconciliation and cost modelling
+
+I built a read-only Python workflow that checks HubSpot payment obligations against Stripe invoices. The evidence includes 108 paired simulation runs using synthetic data and a reproducible cost and break-even model.
+
+[Case study and technical evidence](https://sfs-labs.github.io/ai-knowledge-ops-lab/hubspot-stripe.html)
+
 ### AI Knowledge Ops Lab · service intake, integration and testing
 
 **Built and executed:** A local Qwen → n8n → Python API → SQLite workflow with approval, rejection, restart and fail-closed paths. Recorded 36 real local model inferences and 135 Python tests (rechecked 10 November 2026).
