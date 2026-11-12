@@ -4,7 +4,11 @@
 
 Die Projekte dokumentieren konkrete Aufgaben, ausgeführte technische Arbeiten und überprüfbare Entscheidungen. Die verlinkten Ergebnisse sind nach Herkunft und Datum getrennt.
 
-## Drei Kernprojekte
+## HubSpot–Stripe-Abrechnungskontrolle
+
+Lesender Rechnungsabgleich, 108 gepaarte Simulationsläufe auf synthetischen Daten und ein reproduzierbares Wirtschaftlichkeitsmodell. [Fallstudie, PDF und technische Nachweise](https://sfs-labs.github.io/ai-knowledge-ops-lab/hubspot-stripe.html).
+
+## Weitere Kernprojekte
 
 ### 1. [AI Knowledge Ops Lab](https://github.com/SFS-Labs/ai-knowledge-ops-lab)
 
