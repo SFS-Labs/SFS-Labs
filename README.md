@@ -5,7 +5,7 @@
 **Problem- und Prozessanalyse · Anforderungs- und Messkonzeption · Systemdesign · technische Integration · Evaluation**  
 Technical Onboarding Support (Werkstudent) · Essen / NRW · [LinkedIn](https://www.linkedin.com/in/mathias-steinbach/) · [E-Mail](mailto:mathias.steinbach@icloud.com)
 
-I analyse technical and operational questions, define testable requirements, connect data and software interfaces, and assess results against explicit criteria. My experience combines direct technical user support with independently developed, AI-assisted engineering projects. The examples below link the actual work, observed results and primary records.
+I analyse technical and operational questions, define testable requirements, connect data and software interfaces, and assess results against explicit criteria. My focus is implementing AI and automation in businesses. I want to take responsibility from clarifying technical requirements through rollout and involve the people who will use the solution so they can understand and help shape technical decisions. The examples below link the actual work, observed results and primary records.
 
 [**Project overview**](https://sfs-labs.github.io/ai-knowledge-ops-lab/recruiter.html) · [**Technical documentation**](https://github.com/SFS-Labs/SFS-Labs/blob/main/case-studies/README.md) · [**Source repositories**](https://github.com/SFS-Labs)
 
@@ -61,7 +61,7 @@ The sequence **Discover → Translate → Design → Deliver → Evaluate** is i
 
 ## Professional background and attribution
 
-- **Technical Onboarding Support**, Dr. Schengber & Friends GmbH — working student, remote, since 07/2026. Technical user enquiries, issue isolation and explanation of solutions.
+- **Technical Onboarding Support**, Dr. Schengber & Friends GmbH — working student, remote, since 07/2026. I resolve technical user issues, often during the initial conversation, and explain how the fix works so users can get back to their work.
 - **Independent online retail and reselling**, since 11/2022. Price assessment, sourcing, customer communication, complaints and fulfilment.
 - **B.Sc. Finance & Capital Markets**, TH Köln — ongoing.
 
