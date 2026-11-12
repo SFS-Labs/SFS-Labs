@@ -6,7 +6,7 @@ Die Projekte dokumentieren konkrete Aufgaben, ausgeführte technische Arbeiten u
 
 ## HubSpot–Stripe-Abrechnungskontrolle
 
-Lesender Rechnungsabgleich, 108 gepaarte Simulationsläufe auf synthetischen Daten und ein reproduzierbares Wirtschaftlichkeitsmodell. [Fallstudie, PDF und technische Nachweise](https://sfs-labs.github.io/ai-knowledge-ops-lab/hubspot-stripe.html).
+Der lesende Python-Abgleich verbindet HubSpot-Zahlungsverpflichtungen mit Stripe-Rechnungen und meldet kritische Abweichungen für Finance. Bei sechs Deals pro Tag und 5 % simulierten Abweichungen sinkt der modellierte Prüfaufwand gegenüber dem Tabellenverfahren um 14 Std. 27 Min. je 100 Geschäftstage. Der Nettowert nutzbarer Arbeitszeit nach Betriebskosten beträgt 225,22 €. Bei 28 % kehrt sich der Zeitvorteil um. [Fallstudie, PDF und technische Nachweise](https://sfs-labs.github.io/ai-knowledge-ops-lab/hubspot-stripe.html).
 
 ## Weitere Kernprojekte
 

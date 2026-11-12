@@ -13,7 +13,7 @@ I analyse technical and operational questions, define testable requirements, con
 
 ### HubSpot–Stripe · billing reconciliation and cost modelling
 
-I built a read-only Python workflow that checks HubSpot payment obligations against Stripe invoices. The evidence includes 108 paired simulation runs using synthetic data and a reproducible cost and break-even model.
+I built a read-only Python workflow that matches HubSpot payment obligations to Stripe invoices and flags exceptions for Finance review. At six deals per day and 5% simulated exceptions, the model showed 14 hours 27 minutes less review work per 100 business days than the spreadsheet-based process. The net value of usable staff time after running costs was €225.22. At 28% simulated exceptions the time advantage reversed.
 
 [Case study and technical evidence](https://sfs-labs.github.io/ai-knowledge-ops-lab/hubspot-stripe.html)
 
