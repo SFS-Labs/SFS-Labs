@@ -7,9 +7,21 @@ Technical Onboarding Support (Werkstudent) · Essen / NRW · [LinkedIn](https://
 
 I analyse technical and operational questions, define testable requirements, connect data and software interfaces, and assess results against explicit criteria. My focus is implementing AI and automation in businesses. I want to take responsibility from clarifying technical requirements through rollout and involve the people who will use the solution so they can understand and help shape technical decisions. The examples below link the actual work, observed results and primary records.
 
-[**Project overview**](https://sfs-labs.github.io/ai-knowledge-ops-lab/recruiter.html) · [**Technical documentation**](https://github.com/SFS-Labs/SFS-Labs/blob/main/case-studies/README.md) · [**Source repositories**](https://github.com/SFS-Labs)
+[**All engineering case studies**](https://sfs-labs.github.io/ai-knowledge-ops-lab/work.html) · [**Talk to the portfolio**](https://sfs-labs.github.io/ai-knowledge-ops-lab/interactive.html) · [**Project overview**](https://sfs-labs.github.io/ai-knowledge-ops-lab/recruiter.html) · [**Technical documentation**](https://github.com/SFS-Labs/SFS-Labs/blob/main/case-studies/README.md) · [**Source repositories**](https://github.com/SFS-Labs)
 
 ## Selected work
+
+### Security Skill Factory & Freebuff V8/V9 · controlled security tooling (November 2026)
+
+I helped consolidate the existing CTF Agent Skills with a security tool index, reproducible Solidity checks and an adaptive orchestration layer in the canonical public repository. The 22 November V8/V9 integration reports **133 unique knowledge cards from 134 sources** (one verified alias), **170 CI tests passed, 2 skipped and 1,616 subtests**. These knowledge cards are not 133 installed security scanners. A local test against an intentionally vulnerable example contract produced documented Surya, Slither and Forge evidence. The **native activation of the V8 skill by a freshly started Freebuff session and an independently reproduced blind-test discovery remain unverified**. The later preflight PR #4 is still a draft, not merged main.
+
+[Graphite case study](https://sfs-labs.github.io/ai-knowledge-ops-lab/security-engineering.html) · [Canonical repository](https://github.com/SFS-Labs/ctf-skills) · [Historical Freebuff runtime acceptance](https://github.com/SFS-Labs/ctf-skills/blob/main/docs/FREEBUFF-V8-RUNTIME-ACCEPTANCE.md) · [Open preflight PR](https://github.com/SFS-Labs/ctf-skills/pull/4)
+
+### Agent Tool Execution · Camber → REA MCP → GitHub Actions
+
+An existing Camber agent selected three bounded, read-only REA tools and a GitHub Actions executor made **three actual MCP tool calls**, with **33 validations** passing. The recorded tool catalog exposed 229 tools, but only the three allowed operations were invoked. This is a source-backed demonstration of controlled model-to-tool integration, **not** an unattended Camber self-start, customer APK analysis or autonomous unrestricted agent.
+
+[Graphite case study](https://sfs-labs.github.io/ai-knowledge-ops-lab/agent-systems.html) · [Protocol and run](https://github.com/SFS-Labs/security-reviews/blob/main/docs/CAMBER_MULTITOOL_ACCEPTANCE.md) · [Successful Actions job](https://github.com/SFS-Labs/security-reviews/actions/runs/40716523503)
 
 ### HubSpot–Stripe · billing reconciliation and cost modelling
 
