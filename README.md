@@ -11,11 +11,17 @@ I analyse technical and operational questions, define testable requirements, con
 
 ## Selected work
 
-### Security Skill Factory & Freebuff V8/V9 · controlled security tooling (November 2026)
+### Cybersecurity · Penetration Testing · CTF Engineering (November 2026)
 
-I helped consolidate the existing CTF Agent Skills with a security tool index, reproducible Solidity checks and an adaptive orchestration layer in the canonical public repository. The 22 November V8/V9 integration reports **133 unique knowledge cards from 134 sources** (one verified alias), **170 CI tests passed, 2 skipped and 1,616 subtests**. These knowledge cards are not 133 installed security scanners. A local test against an intentionally vulnerable example contract produced documented Surya, Slither and Forge evidence. The **native activation of the V8 skill by a freshly started Freebuff session and an independently reproduced blind-test discovery remain unverified**. The later preflight PR #4 is still a draft, not merged main.
+I helped consolidate the existing CTF Agent Skills with a security tool index, reproducible Solidity checks and an adaptive orchestration layer in the canonical public repository. The 22 November V8/V9 integration reports **133 unique knowledge cards from 134 sources** (one verified alias), **170 CI tests passed, 2 skipped and 1,616 subtests**. These knowledge cards are not 133 installed security scanners. A local test against an intentionally vulnerable example contract produced documented Surya, Slither and Forge evidence. The **native activation of the V8 skill by a freshly started local agent session and an independently reproduced blind-test discovery remain unverified**. The later preflight PR #4 is still a draft, not merged main.
 
-[Graphite case study](https://sfs-labs.github.io/ai-knowledge-ops-lab/security-engineering.html) · [Canonical repository](https://github.com/SFS-Labs/ctf-skills) · [Historical Freebuff runtime acceptance](https://github.com/SFS-Labs/ctf-skills/blob/main/docs/FREEBUFF-V8-RUNTIME-ACCEPTANCE.md) · [Open preflight PR](https://github.com/SFS-Labs/ctf-skills/pull/4)
+[Graphite case study](https://sfs-labs.github.io/ai-knowledge-ops-lab/security-engineering.html) · [Canonical repository](https://github.com/SFS-Labs/ctf-skills) · [Historical Pentest runtime acceptance](https://github.com/SFS-Labs/ctf-skills/blob/main/docs/FREEBUFF-V8-RUNTIME-ACCEPTANCE.md) · [Open preflight PR](https://github.com/SFS-Labs/ctf-skills/pull/4)
+
+### Adversarial Security Evaluation · CyberChainBench × ReEVMBench
+
+Two native smart-contract evaluation adapters with isolated audit briefings, original-source dependency pinning and controlled post-freeze scoring. The merged historical factory changes fix real Foundry and scorer compatibility failures; they do **not** establish autonomous vulnerability detection or validated blindtest scores.
+
+[Benchmark engineering case study](https://sfs-labs.github.io/ai-knowledge-ops-lab/adversarial-evaluation.html) · [Native evaluator specification](https://github.com/SFS-Labs/ctf-skill-factory/blob/main/benchmarks/README.md) · [Merged calibration fixes](https://github.com/SFS-Labs/ctf-skill-factory/pull/5)
 
 ### Agent Tool Execution · Camber → REA MCP → GitHub Actions
 
